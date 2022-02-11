@@ -68,7 +68,7 @@ partial class Form1
         this.lblBattery.Font = new Font("BIZ UDPゴシック", 8);
         this.lblBattery.Location = new System.Drawing.Point(30, 500);
         this.lblBattery.Name = "Batt";
-        this.lblBattery.Size = new System.Drawing.Size(340, 48);
+        this.lblBattery.Size = new System.Drawing.Size(335, 48);
         this.lblBattery.BackColor = System.Drawing.Color.Transparent;
         this.lblBattery.ForeColor = System.Drawing.Color.White;
         this.lblBattery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -82,7 +82,7 @@ partial class Form1
         this.lblBatteryValue.Font = new Font("BIZ UDPゴシック", 8);
         this.lblBatteryValue.Location = new System.Drawing.Point(0, 0);
         this.lblBatteryValue.Name = "BattValue";
-        this.lblBatteryValue.Size = new System.Drawing.Size(340, 48);
+        this.lblBatteryValue.Size = new System.Drawing.Size(335, 48);
         this.lblBatteryValue.BackColor = System.Drawing.Color.Transparent;
         this.lblBatteryValue.ForeColor = System.Drawing.Color.White;
         this.lblBatteryValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -97,7 +97,7 @@ partial class Form1
         this.lblCpu.Font = new Font("BIZ UDPゴシック", 8);
         this.lblCpu.Location = new System.Drawing.Point(30, 547);
         this.lblCpu.Name = "CPU";
-        this.lblCpu.Size = new System.Drawing.Size(340, 48);
+        this.lblCpu.Size = new System.Drawing.Size(335, 48);
         this.lblCpu.BackColor = System.Drawing.Color.Transparent;
         this.lblCpu.ForeColor = System.Drawing.Color.White;
         this.lblCpu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,7 +112,7 @@ partial class Form1
         this.lblCpuValue.Font = new Font("BIZ UDPゴシック", 8);
         this.lblCpuValue.Location = new System.Drawing.Point(0, 0);
         this.lblCpuValue.Name = "CPUValue";
-        this.lblCpuValue.Size = new System.Drawing.Size(340, 48);
+        this.lblCpuValue.Size = new System.Drawing.Size(335, 48);
         this.lblCpuValue.BackColor = System.Drawing.Color.Transparent;
         this.lblCpuValue.ForeColor = System.Drawing.Color.White;
         this.lblCpuValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -127,7 +127,7 @@ partial class Form1
         this.lblMem.Font = new Font("BIZ UDPゴシック", 8);
         this.lblMem.Location = new System.Drawing.Point(30, 594);
         this.lblMem.Name = "MEM";
-        this.lblMem.Size = new System.Drawing.Size(340, 48);
+        this.lblMem.Size = new System.Drawing.Size(335, 48);
         this.lblMem.BackColor = System.Drawing.Color.Transparent;
         this.lblMem.ForeColor = System.Drawing.Color.White;
         this.lblMem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,7 +142,7 @@ partial class Form1
         this.lblMemValue.Font = new Font("BIZ UDPゴシック", 8);
         this.lblMemValue.Location = new System.Drawing.Point(0, 0);
         this.lblMemValue.Name = "MEMValue";
-        this.lblMemValue.Size = new System.Drawing.Size(340, 48);
+        this.lblMemValue.Size = new System.Drawing.Size(335, 48);
         this.lblMemValue.BackColor = System.Drawing.Color.Transparent;
         this.lblMemValue.ForeColor = System.Drawing.Color.White;
         this.lblMemValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -157,7 +157,7 @@ partial class Form1
         this.lblDisk.Font = new Font("BIZ UDPゴシック", 8);
         this.lblDisk.Location = new System.Drawing.Point(30, 641);
         this.lblDisk.Name = "DISK";
-        this.lblDisk.Size = new System.Drawing.Size(340, 48);
+        this.lblDisk.Size = new System.Drawing.Size(335, 48);
         this.lblDisk.BackColor = System.Drawing.Color.Transparent;
         this.lblDisk.ForeColor = System.Drawing.Color.White;
         this.lblDisk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,7 +172,7 @@ partial class Form1
         this.lblDiskValue.Font = new Font("BIZ UDPゴシック", 8);
         this.lblDiskValue.Location = new System.Drawing.Point(0, 0);
         this.lblDiskValue.Name = "DISKValue";
-        this.lblDiskValue.Size = new System.Drawing.Size(340, 48);
+        this.lblDiskValue.Size = new System.Drawing.Size(335, 48);
         this.lblDiskValue.BackColor = System.Drawing.Color.Transparent;
         this.lblDiskValue.ForeColor = System.Drawing.Color.White;
         this.lblDiskValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -187,7 +187,7 @@ partial class Form1
         this.lblNet.Font = new Font("BIZ UDPゴシック", 8);
         this.lblNet.Location = new System.Drawing.Point(30, 688);
         this.lblNet.Name = "Net";
-        this.lblNet.Size = new System.Drawing.Size(340, 48);
+        this.lblNet.Size = new System.Drawing.Size(335, 48);
         this.lblNet.BackColor = System.Drawing.Color.Transparent;
         this.lblNet.ForeColor = System.Drawing.Color.White;
         this.lblNet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,7 +202,7 @@ partial class Form1
         this.lblNetValue.Font = new Font("BIZ UDPゴシック", 8);
         this.lblNetValue.Location = new System.Drawing.Point(0, 0);
         this.lblNetValue.Name = "NetValue";
-        this.lblNetValue.Size = new System.Drawing.Size(340, 48);
+        this.lblNetValue.Size = new System.Drawing.Size(335, 48);
         this.lblNetValue.BackColor = System.Drawing.Color.Transparent;
         this.lblNetValue.ForeColor = System.Drawing.Color.White;
         this.lblNetValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -217,7 +217,7 @@ partial class Form1
         this.lblVol.Font = new Font("BIZ UDPゴシック", 8);
         this.lblVol.Location = new System.Drawing.Point(30, 735);
         this.lblVol.Name = "Vol";
-        this.lblVol.Size = new System.Drawing.Size(340, 48);
+        this.lblVol.Size = new System.Drawing.Size(335, 48);
         this.lblVol.BackColor = System.Drawing.Color.Transparent;
         this.lblVol.ForeColor = System.Drawing.Color.White;
         this.lblVol.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -232,7 +232,7 @@ partial class Form1
         this.lblVolValue.Font = new Font("BIZ UDPゴシック", 8);
         this.lblVolValue.Location = new System.Drawing.Point(0, 0);
         this.lblVolValue.Name = "VolValue";
-        this.lblVolValue.Size = new System.Drawing.Size(340, 48);
+        this.lblVolValue.Size = new System.Drawing.Size(335, 48);
         this.lblVolValue.BackColor = System.Drawing.Color.Transparent;
         this.lblVolValue.ForeColor = System.Drawing.Color.White;
         this.lblVolValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
