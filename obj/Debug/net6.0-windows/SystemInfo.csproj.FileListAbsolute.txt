@@ -16,3 +16,10 @@ C:\WorkSpace\github\SystemInfo\obj\Debug\net6.0-windows\SystemInfo.genruntimecon
 C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\System.Management.dll
 C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 C:\WorkSpace\github\SystemInfo\obj\Debug\net6.0-windows\SystemInfo.csproj.CopyComplete
+C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\NAudio.dll
+C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\NAudio.Asio.dll
+C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\NAudio.Core.dll
+C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\NAudio.Midi.dll
+C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\NAudio.Wasapi.dll
+C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\NAudio.WinForms.dll
+C:\WorkSpace\github\SystemInfo\bin\Debug\net6.0-windows\NAudio.WinMM.dll

@@ -9,6 +9,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Management;
 using System.Net.NetworkInformation;
+using NAudio.CoreAudioApi;
 public partial class Form1 : Form
 {
     /// <summary>
@@ -130,8 +131,16 @@ public partial class Form1 : Form
         this.lblNetValue.Update();
 
         //ボリューム取得
-        this.lblVolValue.Text = " 0 ";
+        MMDevice device;
+        MMDeviceEnumerator DevEnum = new MMDeviceEnumerator();
+        device = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia);
 
+        //現在のシステムボリュームの音量を取得
+        //Console.WriteLine("Volume Lever : " + device.AudioEndpointVolume.MasterVolumeLevelScalar.ToString());
+
+        this.lblVolValue.Text = string.Format("{0:0} ", device.AudioEndpointVolume.MasterVolumeLevelScalar * 100);
+        DevEnum.Dispose();
+        device.Dispose();
     }
 
     /// <summary>
