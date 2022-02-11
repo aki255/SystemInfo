@@ -224,6 +224,20 @@ partial class Form1
         this.lblVol.Text = " VOL ";
 
         /// <summary>
+        /// sbHVol
+        /// </summary>
+        /// <returns></returns>
+        this.sbHVol = new HScrollBar();
+        this.sbHVol.Location = new System.Drawing.Point(60, 8);
+        this.sbHVol.Name = "HScrollBarVol";
+        this.sbHVol.Size = new System.Drawing.Size(220, 29);
+        this.sbHVol.LargeChange = 15;
+        this.sbHVol.SmallChange = 1;
+        this.sbHVol.Minimum = 0;
+        this.sbHVol.Maximum = 100 + this.sbHVol.LargeChange - 1;
+        this.sbHVol.ValueChanged += SbHVol_ValueChanged;
+
+        /// <summary>
         /// lblVolValue
         /// </summary>
         /// <returns></returns>
@@ -236,6 +250,7 @@ partial class Form1
         this.lblVolValue.BackColor = System.Drawing.Color.Transparent;
         this.lblVolValue.ForeColor = System.Drawing.Color.White;
         this.lblVolValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+        this.lblVol.Controls.Add(this.sbHVol);
         this.lblVol.Controls.Add(this.lblVolValue);
 
         /// <summary>
@@ -245,6 +260,8 @@ partial class Form1
         this.components = new System.ComponentModel.Container();
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(400, 850);
+        this.StartPosition = FormStartPosition.Manual;
+        this.Location = new System.Drawing.Point(0, 0);
         this.Text = "System Info";
         this.Opacity = 0.80;
         this.ControlBox = false;
@@ -279,4 +296,5 @@ partial class Form1
     private System.Windows.Forms.Label lblNetValue;
     private System.Windows.Forms.Label lblVol;
     private System.Windows.Forms.Label lblVolValue;
+    private System.Windows.Forms.ScrollBar sbHVol;
 }

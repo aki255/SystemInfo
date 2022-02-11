@@ -30,6 +30,15 @@ public partial class Form1 : Form
         Dictionary<DateTime, string> dicHoliday = HolidayUtil();
         //カレンダー設定／表示
         SetCalendar(dicHoliday);
+
+        //ボリューム取得
+        MMDevice device;
+        MMDeviceEnumerator DevEnum = new MMDeviceEnumerator();
+        device = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia);
+        this.lblVolValue.Text = string.Format("{0:0} ", device.AudioEndpointVolume.MasterVolumeLevelScalar * 100);
+        this.sbHVol.Value = (int)(device.AudioEndpointVolume.MasterVolumeLevelScalar * 100);
+        DevEnum.Dispose();
+        device.Dispose();
     }
 
     /// <summary>
@@ -134,11 +143,25 @@ public partial class Form1 : Form
         MMDevice device;
         MMDeviceEnumerator DevEnum = new MMDeviceEnumerator();
         device = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia);
-
-        //現在のシステムボリュームの音量を取得
-        //Console.WriteLine("Volume Lever : " + device.AudioEndpointVolume.MasterVolumeLevelScalar.ToString());
-
         this.lblVolValue.Text = string.Format("{0:0} ", device.AudioEndpointVolume.MasterVolumeLevelScalar * 100);
+        this.sbHVol.Value = (int)(device.AudioEndpointVolume.MasterVolumeLevelScalar * 100);
+        DevEnum.Dispose();
+        device.Dispose();
+    }
+
+    /// <summary>
+    /// スクロールバー移動
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void SbHVol_ValueChanged(object sender, EventArgs e) {
+        int volValue = this.sbHVol.Value;
+        this.lblVolValue.Text = string.Format("{0:0} ", volValue);
+
+        MMDevice device;
+        MMDeviceEnumerator DevEnum = new MMDeviceEnumerator();
+        device = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia);
+        device.AudioEndpointVolume.MasterVolumeLevelScalar = ((float)volValue / 100.0f);
         DevEnum.Dispose();
         device.Dispose();
     }
@@ -198,7 +221,7 @@ public partial class Form1 : Form
                 CalendarDay.Name = "CalendarDay";
                 CalendarDay.Size = new System.Drawing.Size(48, 48);
                 CalendarDay.BackColor = System.Drawing.Color.Black;
-                CalendarDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight; 
+                CalendarDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter; 
                 this.Controls.Add(CalendarDay);
 
                 //基本の色を設定
